@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)\project.uvproj
+Project File Date:  04/14/2015
+
+<h2>Output:</h2>
+Build target 'Flash'
+compiling bsp_uart.c...
+linking...
+Program Size: Code=26982 RO-data=1382 RW-data=248 ZI-data=23088  
+After Build - User command #1: fromelf.exe --bin -o "E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)\Flash\Obj\output.bin" "E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)\Flash\Obj\output.axf"
+After Build - User command #2: CopyBin.bat
+E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)>copy Flash\Obj\output.bin ..\..\spi_flash.bin 
+已复制         1 个文件。
+".\Flash\Obj\output.axf" - 0 Error(s), 0 Warning(s).
+ but never referenced
+        uint8_t buf[100] = {1, 2, 3, 4};
+..\..\User\test\test_spi_flash.c(8): warning:  #177-D: variable "write_addr" was declared but never referenced
+        uint32_t write_addr = 0;
+..\..\User\test\test_spi_flash.c(10): warning:  #177-D: variable "size" was declared but never referenced
+        uint16_t size;
+..\..\User\test\test_spi_flash.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=26982 RO-data=1382 RW-data=248 ZI-data=23088  
+After Build - User command #1: fromelf.exe --bin -o "E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)\Flash\Obj\output.bin" "E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)\Flash\Obj\output.axf"
+After Build - User command #2: CopyBin.bat
+E:\360Cloud\MCU\STM32Fxxx\STM32F407\Project\uCOS\CSP\ucos\Project\MDK-ARM(uV4)>copy Flash\Obj\output.bin ..\..\spi_flash.bin 
+已复制         1 个文件。
+".\Flash\Obj\output.axf" - 0 Error(s), 5 Warning(s).
+ preprocessing directive
+  #incluee "fipex.h"
+..\..\User\Task\src\fipex.c: 0 warnings, 1 error
+compiling test_spi_flash.c...
+..\..\User\includes.h(90): error:  #11-D: unrecognized preprocessing directive
+  #incluee "fipex.h"
+..\..\User\test\test_spi_flash.c(6): warning:  #177-D: variable "buf" was declared but never referenced
+        uint8_t buf[100] = {1, 2, 3, 4};
+..\..\User\test\test_spi_flash.c(8): warning:  #177-D: variable "write_addr" was declared but never referenced
+        uint32_t write_addr = 0;
+..\..\User\test\test_spi_flash.c(10): warning:  #177-D: variable "size" was declared but never referenced
+        uint16_t size;
+..\..\User\test\test_spi_flash.c: 3 warnings, 1 error
+".\Flash\Obj\output.axf" - 9 Error(s), 5 Warning(s).
+Target not created
